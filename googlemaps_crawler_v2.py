@@ -113,6 +113,7 @@ class CustomCondition:
 class GoogleMapsBusinessCrawler:
     def __init__(self):
         self.driver = webdriver.Edge()
+        self.driver.maximize_window()
 
     def __del__(self):
         self.driver.quit()
